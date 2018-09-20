@@ -4,7 +4,7 @@ import { Button } from 'react-native-elements';
 import Wizard from './components/Wizard';
 
 const defaultData = [
-  { label: 'Halloween', data: { a: require('./assets/pumpkin.png') } },
+  { label: 'Holiday', data: { a: require('./assets/pumpkin.png') } },
   { label: 'Birthday', data: { a: require('./assets/cake.png') } },
   { label: 'Love', data: { a: require('./assets/tp-heart.png') } },
   { label: 'Get Well  Soon', data: { a: require('./assets/getwell.png') } }
@@ -13,7 +13,7 @@ const defaultData = [
 export default class HomeScreen extends Component {
   render() {
     return (
-      <View style={{ flex: 1, flexDirection: 'column' }}>
+      <View style={{ flex: 1, flexDirection: 'column', marginTop: 25 }}>
         <View style={{ flex: 1, flexDirection: 'row' }}>
           <View
             style={{
