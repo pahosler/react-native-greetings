@@ -1,13 +1,22 @@
-import React, { PureComponent } from 'react'
-import { View } from 'react-native'
+import React, { PureComponent } from 'react';
+import { View } from 'react-native';
 
 export default class Step extends PureComponent {
-  render () {
-    const { children, currentIndex, isLast, prevStep, nextStep, onChangeValue, onSubmit, values } = this.props
+  render() {
+    const {
+      children,
+      currentIndex,
+      isLast,
+      prevStep,
+      nextStep,
+      onChangeValue,
+      onSubmit,
+      values
+    } = this.props;
 
     return (
-      <View style={{ flex: 1 }}>
-        <View style={{ flex: 2 }}>
+      <View style={{ flex: 1, flexDirection: 'column' }}>
+        <View style={{ flex: 1 }}>
           {children({
             onChangeValue,
             values,
@@ -19,6 +28,6 @@ export default class Step extends PureComponent {
           })}
         </View>
       </View>
-    )
+    );
   }
 }
